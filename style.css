@@ -1,0 +1,108 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+.texto {
+    padding: 20px
+}
+.texto::first-line {
+    color:blue;
+    font-size: 3em;
+}
+
+.texto2 {
+    padding: 20px;
+}
+.texto2::first-letter {
+    color: blue;
+    font-size: 2em;
+}
+
+form {
+    margin: 100px auto;
+    display: block;
+    background-color: #555;
+    padding: 100px;
+    width: 50%;
+}
+
+input {
+    padding: 6px;
+    width: 100%;
+}
+input::placeholder {
+    color: gray;
+}
+
+.selection::selection {
+    background-color: black;
+    color:blueviolet
+}
+
+.b::before {
+    content: "vamos";
+    color: aqua;
+}
+
+.b::after {
+    content: "la casa";
+    color: blueviolet;
+}
+
+/*PSEUDO CLASES*/
+
+.caja1 {
+    height: 200px;
+    width: 200px;
+    background: slateblue;
+    transition: background 1s, height 1s, width 1s, border 1s, color 1s;
+    border: 3px solid slateblue;
+    color: black;
+}
+.caja1:hover {
+    background: darkblue;
+    height: 300px;
+    width: 300px;
+    color: aqua;
+    border-color: #555;
+}
+.link {
+    margin: 30px;
+    display: block;
+}
+
+.link:link {
+    color: blue;
+}
+
+.link:visited {
+    color: aqua;
+}
+
+.active {
+    width: 300px;
+    height: 300px;
+    background-color: indigo;
+     margin: 35px;
+     transition: all 1s;
+}
+
+.active:active {
+    background-color: darkblue;
+    width: 600px ;
+}
+.focus {
+    margin: 100px auto;
+    display: block;
+    padding: 30px;
+    width: 100px;
+    height: 70px;
+    transition: all 1s;
+}
+.focus:focus {
+
+    width: 200px;
+    height: 70px;
+    background-color: #555;
+}
+
+
